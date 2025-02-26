@@ -1,11 +1,17 @@
 import React from 'react';
+// Removed React import, and fixed the type in props.
+import { FC, ReactNode } from "react"
 
-const FloatingShapes = ({ children }: { children: string }) => {
+interface FloatingShapesProps {
+  children: ReactNode;
+}
+
+const FloatingShapes: FC<FloatingShapesProps> = ({ children }) => {
   return (
     <style jsx>{`
-      /* Your CSS styles here */
+      // Your styles here
     `}</style>
-  );
-};
+  )
+}
 
 export default FloatingShapes;
