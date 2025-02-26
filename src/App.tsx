@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button"
 
-const App = () => {
+function App() {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center">
       <div className="container mx-auto px-4 py-8">
